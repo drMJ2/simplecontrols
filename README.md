@@ -7,6 +7,8 @@ Check out the sample file for full details.
 
 **Panel**:
 
+A panel is a collapsible div.
+
 `<div class="ctl-panel" title="This is a panel">...</div>`
 
 ![Panel example](/sample_images/panel.JPG?raw=true "Panel example")
