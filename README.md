@@ -1,5 +1,6 @@
 # Simple HTML5 Controls
 This is a a set of easy to use, pure HTML5 (CSS/JS) controls, with no external dependencies. MIT license.
+
 The controls are designed to be used as inline HTML. The only inline overhead is the class name.
 Style and event handlers can be applied directly to the HTML elements.
 Check out the sample file for full details.
