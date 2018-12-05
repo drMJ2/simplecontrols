@@ -15,7 +15,7 @@ Copy the three simplecontrols.* files. Follow one of the two patterns ilustrated
 
 A panel is a collapsible div.
 
-`<div class="ctl-panel" title="This is a panel">...</div>`
+`<div class="ctl-panel" title="Panel header">Panel body</div>`
 
 ![Panel example](/sample_images/panel.JPG?raw=true "Panel example")
 
