@@ -8,7 +8,7 @@ Check out the sample file for full details.
 
 Panel:
 
-`<div class="ctl-panel" title="This is a panel"><br /></div>`
+`<div class="ctl-panel" title="This is a panel">...</div>`
 
 ![Panel example](/sample_images/panel.JPG?raw=true "Panel example")
 
