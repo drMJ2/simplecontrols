@@ -5,6 +5,9 @@ The controls are designed to be used as inline HTML. The only inline overhead is
 Additional CSS classes, inline styles and event handlers can be applied directly to the HTML elements.
 Check out the sample file for full details.
 
+**Installation instructions**:
+Copy the three simplecontrols.* files. Follow one of the two patterns ilustrated in the sample*.html files.
+
 **Panel**:
 
 A panel is a collapsible div.
