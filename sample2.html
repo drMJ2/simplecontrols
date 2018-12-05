@@ -15,10 +15,17 @@
 
     <!-- Create a panel with two sliders. The class identifies the simple control to instantiate. -->
     <div class="ctl-panel" title="This is a panel">
+        <!-- A simple horizontal slider. Range input properties are used to define the slider. -->
         <input type="range" class="ctl-hslider" min="1" max="5" step="0.1" value="4.2" title="Simple slider" />
+        <!-- A slider can be styled inline of with css classes. -->
         <input type="range" class="ctl-hslider" min="0" max="50" value="20" title="Styled slider" data-fill-color="red" style="width:300px" />
+        <!-- A slider can be disabled, turning it into a meter. -->
         <input type="range" class="ctl-hslider" min="0" max="100" step="0.1" value="23.7" title="Disabled slider (meter)" disabled />
+        <!--Note that IE doesn't really support oninput, use onchange instead-->
         <input type="range" class="ctl-vslider" min="1" max="5" value="4" title="Vertical slider" oninput="alert(this.value)" />
+        <!-- Vertical sliders are shown side by side, as expected. -->
+        <input type="range" class="ctl-vslider" min="1" max="500" value="140" title="Vertical slider 2" />
+        <!-- Note: the datalist tag for defining markers and labels is yet supported -->
     </div>
 
     <!--
