@@ -30,13 +30,28 @@ function replaceSliders(/*string: ctl-hslider or ctl-vslider*/className)
         for (var prop in input.style) {
             slider.style[prop] = input.style[prop];
         }
+        // vertical sliders require special handling of width/height/transform
         slider.children[0].children[0].style.background = input.dataset.fillColor;
+        if (className === "ctl-vslider") {
+            if (input.style.height) {
+                slider.children[0].style.width = input.style.height;
+                var o = input.clientHeight / 2;
+                slider.children[0].style["transform-origin"] = o + "px " + o + "px";
+            }
 
-        // keep the source range input as a hidden last child. we still need it for the oninput event, and any custom event handlers
+            slider.children[0].style.width = input.style.height;
+            slider.children[0].style.height = input.style.width;
+        }
+
+        // keep the source range input as a hidden last child. we still need it for the oninput event, and any custom event handlers, but clear the inline style
         input.classList.remove(className);
         input.classList.add("sld-hidden-slider");
         input.addEventListener("change", updateSlider); // for IE
         input.addEventListener("input", updateSlider);
+        for (prop in input.style) {
+            input.style[prop] = "";
+        }
+
         slider.children[0].insertBefore(input, null);
 
         // update the values
