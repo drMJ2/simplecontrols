@@ -43,3 +43,20 @@ A slider can be oriented verically. Events can be attached directly.
 
 ![Example of vertical slider with event handler](/sample_images/vslider.JPG?raw=true "Example of vertical slider with event handler")
 
+## Tested browsers (in progress):
+
+Desktop:
+
+- [x] Chrome
+- [x] Edge
+- [x] Firefox
+- [ ] Opera
+- [ ] Safari
+
+Mobile:
+
+- [ ] Chrome for Android
+- [ ] Edge Mobile
+- [ ] Firefox for Android
+- [ ] Opera for Android
+- [ ] Safari on iOS
