@@ -1,4 +1,4 @@
-  HTML Meta-controls
+# HTML Meta-controls
 This is a a set of easy to use, pure HTML5 (CSS/JS) meta-controls, with no external dependencies. MIT license.
 
 The controls are designed to be used as inline HTML. The only inline overhead is the class name.
